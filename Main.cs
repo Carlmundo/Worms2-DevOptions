@@ -64,7 +64,7 @@ namespace W2_DevMode
                 {0x117160, 0xFF}, //Cluster angle
                 {0x11716C, 0xFF}, //Cluster damage
                 {0x117178, 0xA}, //Override fuse
-                {0x117184, 0x24}, //Amount of fire
+                {0x117184, 0xFF}, //Amount of fire
                 {0x117190, 0xFF}, //Fire spread speed
                 {0x11719C, 0xFF}, //Fire period
                 {0x1171A8, 0xFF}, //Impact force
