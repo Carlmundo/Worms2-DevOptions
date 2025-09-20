@@ -53,10 +53,10 @@ namespace W2_DevMode
                 {0x117100, 0xFF}, //Weapon damage
                 {0x11710C, 0xFF}, //Blast power
                 {0x117118, 0xFF}, //Explosion bias
-                {0x117124, 0x30}, //Homing delay (milliseconds) (Byte 1)
-                {0x117125, 0x75}, //Homing delay (milliseconds) (Byte 2)
-                {0x117130, 0x30}, //Homing time (milliseconds) (Byte 1)
-                {0x117131, 0x75}, //Homing time (milliseconds) (Byte 2)
+                {0x117124, 0x10}, //Homing delay (milliseconds) (Byte 1)
+                {0x117125, 0x27}, //Homing delay (milliseconds) (Byte 2)
+                {0x117130, 0x10}, //Homing time (milliseconds) (Byte 1)
+                {0x117131, 0x27}, //Homing time (milliseconds) (Byte 2)
                 {0x11713C, 0xFF}, //Wind response
                 {0x117148, 0xFF}, //No. clusters
                 {0x117154, 0xFF}, //Cluster power (Byte 1)
@@ -112,17 +112,17 @@ namespace W2_DevMode
                 //Weapons
                 {0x1170B8, 0xFF}, //Stock
                 {0x1170C4, 0xFF}, //Weapon delay
-                {0x1170D0, 0xFF}, //Retreat time
+                {0x1170D0, 0x7F}, //Retreat time
                 {0x1170DC, 0xFF}, //Total ammo in a crate
                 {0x1170E8, 0xFF}, //Bullet count
                 {0x1170F4, 0x64}, //Appears in crates (%)
                 {0x117100, 0xFF}, //Weapon damage
                 {0x11710C, 0xFF}, //Blast power
                 {0x117118, 0xFF}, //Explosion bias
-                {0x117124, 0xFF}, //Homing delay (milliseconds) (Byte 1)
-                {0x117125, 0xFF}, //Homing delay (milliseconds) (Byte 2)
-                {0x117130, 0xFF}, //Homing time (milliseconds) (Byte 1)
-                {0x117131, 0xFF}, //Homing time (milliseconds) (Byte 2)
+                {0x117124, 0x10}, //Homing delay (milliseconds) (Byte 1)
+                {0x117125, 0x27}, //Homing delay (milliseconds) (Byte 2)
+                {0x117130, 0x10}, //Homing time (milliseconds) (Byte 1)
+                {0x117131, 0x27}, //Homing time (milliseconds) (Byte 2)
                 {0x11713C, 0xFF}, //Wind response
                 {0x117148, 0xFF}, //No. clusters
                 {0x117154, 0xFF}, //Cluster power (Byte 1)
