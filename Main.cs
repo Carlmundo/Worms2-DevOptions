@@ -33,14 +33,14 @@ namespace W2_DevMode
                 {0x5819F, 0x64}, //Repeat Swings
                 {0x581A1, 0xFF}, //Repeat Swings - Minimum
                 {0x581C6, 0x7D}, //Fall Damage
-                {0x5829C, 0xF}, //Worms starting energy (Byte 1)
-                {0x5829D, 0x27}, //Worms starting energy (Byte 2)
+                {0x5829C, 0xE9}, //Worms starting energy (Byte 1)
+                {0x5829D, 0x03}, //Worms starting energy (Byte 2)
                 {0x582A1, 0x1}, //Worms starting energy - Minimum
                 {0x5820D, 0x7F}, //Land Sink Rate
                 {0x5820F, 0xFF}, //Land Sink Rate - Minimum
                 {0x580EC, 0x12}, //Auto Replay Kills
-                {0x58113, 0x10}, //Auto Replay Damage (Byte 1)
-                {0x58114, 0x27}, //Auto Replay Damage (Byte 2)
+                {0x58113, 0x88}, //Auto Replay Damage (Byte 1)
+                {0x58114, 0x13}, //Auto Replay Damage (Byte 2)
                 {0x58084, 0x7D}, //Wind Strength
 
                 //Weapons
@@ -99,7 +99,7 @@ namespace W2_DevMode
                 {0x5819F, 0x7F}, //Repeat Swings
                 {0x581A1, 0xFF}, //Repeat Swings - Minimum
                 {0x581C6, 0x7F}, //Fall Damage
-                {0x5829C, 0xF}, //Worms starting energy (Byte 1)
+                {0x5829C, 0x10}, //Worms starting energy (Byte 1)
                 {0x5829D, 0x27}, //Worms starting energy (Byte 2)
                 {0x582A1, 0x1}, //Worms starting energy - Minimum
                 {0x5820D, 0x7F}, //Land Sink Rate
@@ -163,19 +163,20 @@ namespace W2_DevMode
         }
         private void checkIfPatched()
         {
+            string strDevOptions = "Developer Options: ";
             using (FileStream fsSource = new FileStream(options.filename, FileMode.Open, FileAccess.Read))
             using (BinaryReader binaryReader = new BinaryReader(fsSource)) {
                 fsSource.Seek(0x58355, SeekOrigin.Begin);
                 ushort result = binaryReader.ReadByte();
                 if (result.ToString() == "125") { //Check value of First aid crate
                     options.patched = false;
-                    lblStatus.Text = "Frontend is unpatched.";
-                    btnPatch.Text = "Patch";
+                    lblStatus.Text = strDevOptions + "Off";
+                    btnPatch.Text = "Enable";
                 }
                 else {
                     options.patched = true;
-                    lblStatus.Text = "Frontend is patched.";
-                    btnPatch.Text = "Reverse Patch";
+                    lblStatus.Text = strDevOptions + "On";
+                    btnPatch.Text = "Disable";
                 }
             }
         }
