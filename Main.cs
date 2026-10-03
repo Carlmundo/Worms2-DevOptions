@@ -30,7 +30,6 @@ namespace W2_DevMode
                 {0x58275, 0x78}, //Delay between turns (seconds)
                 {0x57FD6, 0x18}, //Landmines
                 {0x57FFC, 0xA}, //Mine explosion delay (seconds)
-                {0x57FFE, 0xFE}, //Mine explosion delay (seconds) - Minimum
                 {0x5819F, 0x64}, //Repeat Swings
                 {0x581A1, 0xFF}, //Repeat Swings - Minimum
                 {0x581C6, 0x7D}, //Fall Damage
@@ -97,7 +96,6 @@ namespace W2_DevMode
                 {0x58275, 0x7F}, //Delay between turns (seconds)
                 {0x57FD6, 0x18}, //Landmines
                 {0x57FFC, 0x7F}, //Mine explosion delay (seconds)
-                {0x57FFE, 0xFE}, //Mine explosion delay (seconds) - Minimum
                 {0x5819F, 0x7F}, //Repeat Swings
                 {0x581A1, 0xFF}, //Repeat Swings - Minimum
                 {0x581C6, 0x7F}, //Fall Damage
