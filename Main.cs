@@ -33,8 +33,8 @@ namespace W2_DevMode
                 {0x5819F, 0x64}, //Repeat Swings
                 {0x581A1, 0xFF}, //Repeat Swings - Minimum
                 {0x581C6, 0x7D}, //Fall Damage
-                {0x5829C, 0xD0}, //Worms starting energy (Byte 1)
-                {0x5829D, 0x07}, //Worms starting energy (Byte 2)
+                {0x5829C, 0xE8}, //Worms starting energy (Byte 1)
+                {0x5829D, 0x03}, //Worms starting energy (Byte 2)
                 {0x582A1, 0x1}, //Worms starting energy - Minimum
                 {0x5820D, 0x7F}, //Land Sink Rate
                 {0x5820F, 0xFF}, //Land Sink Rate - Minimum
