@@ -44,7 +44,7 @@ namespace W2_DevMode
                 {0x58084, 0x7D}, //Wind Strength
 
                 //Weapons
-                {0x1170B8, 0x64}, //Stock
+                {0x1170B8, 0x63}, //Stock
                 {0x1170C4, 0x64}, //Weapon delay
                 {0x1170D0, 0x3C}, //Retreat time
                 {0x1170DC, 0x64}, //Total ammo in a crate
